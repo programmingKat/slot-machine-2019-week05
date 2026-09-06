@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Slot Machine</title>
+</head>
+
+<body>
+    <h1 class="fx-liquid">Slot Machine</h1>
+    <section class="wallet flex">
+        <section class="flex">
+            <span>wallet:</span>
+            <span id="wallet-balance">500</span>
+        </section>
+
+    </section>
+
+    <section id="slot-wrapper flex">
+        <section class="flex" id="slots">
+            <div class="flex" id="reel-1">🍒</div>
+            <div class="flex" id="reel-2">🍒</div>
+            <div class="flex" id="reel-3">🍒</div>
+        </section>
+
+    </section>
+
+    <p>Place your bets! You must bet a minimum of $5 and you can not make wagers larger than $50</p>
+
+
+
+
+    <section class="flex" id="bet-container">
+        <section id="place-bets" class="flex">
+            <button type="button" name="min-bet" id="min-bet">$5</button>
+            <button type="button" name="max-bet" id="max-bet">$50</button>
+            <input id="bet-amount" type="number">
+            <button type="button" name="submit-bet" id="submit-bet">Place bet!</button>
+        </section>
+    </section>
+
+
+    <p id="user-message"></p>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

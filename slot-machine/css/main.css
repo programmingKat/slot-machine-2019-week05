@@ -1,0 +1,156 @@
+
+:root{
+--thistle: #cdb4dbff;
+--pastel-petal: rgb(254, 221, 233);
+--baby-pink: #ffafccff;
+--icy-blue: #bde0feff;
+--sky-blue: #a2d2ffff;
+--ink-3: rgb(157, 116, 181);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background: var(--pastel-petal)
+}
+
+h1{
+    font-family: 'DynaPuff', sans-serif;
+    color: var(--thistle);
+    text-align:center;
+    font-size: 4rem;
+}
+
+/* taken from css text- effects colorion.com */
+.fx-liquid{
+    color: transparent;
+    -webkit-text-stroke: 1px color-mix(in srgb, var(--ink-3) 65%, transparent);
+    background: linear-gradient(0deg,
+      var(--ink-3) 0 46%,
+      color-mix(in srgb, var(--ink-3) 55%, transparent) 48%,
+      transparent 52% 100%
+    ) 0 0 / 100% 220%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: fx-liquid 3.4s ease-in-out infinite;
+
+}
+
+/* .fx-liquid {
+  font: 600 32px/1.1 'DynaPuff', monospace;
+  letter-spacing: .06em;
+
+} */
+@keyframes fx-liquid {
+  0%, 100% { background-position: 0 -110%; }
+  50%      { background-position: 0 10%; }
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+
+div{
+    background: var(--icy-blue);
+    border-radius: 1rem;
+    height: 10rem;
+    width: 10rem;
+    font-size: 3rem;
+    /* border: solid 1px black; */
+    align-items: center;
+    justify-content: center;
+}
+
+/* #slot-wrapper{
+    justify-content: center;
+} */
+#slots{
+    width:100%;
+    height: 20rem;
+    border-radius: 2rem;
+    background-color: var(--thistle);
+    box-shadow: 10px 5px 5px var(--baby-pink);
+    /* border: solid 1px black; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+#bet-container{
+    width: 100%;
+    justify-content: center;
+}
+#place-bets{
+    flex-direction: column;
+    /* border: solid 1px black; */
+    min-height: 20rem;
+    max-width:60%;
+    margin: 2rem 0; 
+    justify-content: space-around;
+}
+
+
+.wallet{
+    min-height: 2.5rem;
+    width: 100%;
+    margin: 2rem 0; 
+    justify-content: flex-end;
+}
+
+.wallet section{
+    border-radius: 1rem;
+    background: var(--icy-blue);
+    min-width: 30%;
+    justify-content: space-around;
+    span{
+        font-family: 'Atma', Arial, sans-serif;
+        font-weight: 600;
+        font-size:3rem;
+        padding: 1rem;
+        color: grey;
+    }
+}
+
+/*
+Source - https://stackoverflow.com/a/45890842
+Posted by Kevinleary.net, modified by community. See post 'Timeline' for change history
+Retrieved 2026-09-05, License - CC BY-SA 4.0
+*/
+
+button, input[type="submit"]{
+	background: var(--thistle);
+	color: inherit;
+	border: none;
+	padding: 1rem;
+	font-family: 'DynaPuff';
+
+    border-radius: 1rem;
+	cursor: pointer;
+	outline: inherit;
+}
+
+#bet-amount{
+    background-color: var(--icy-blue);
+}
+#submit-bet{
+    appearance: none;
+    border-radius: .5rem;
+    background: var(--baby-pink);
+}
+
+p{
+    text-align: center;
+    font-family: 'DynaPuff';
+    font-size: 2rem;
+    color: grey;
+    text-shadow: 10px 5px 5px var(--thistle);
+}
+
+@media (width <= 600px){
+    .wallet{
+        justify-content: center;
+    }
+}
+    
