@@ -1,5 +1,3 @@
-# 🎰 Project: Slot Machine
-
 # 🎰 Slot Machine
 
 A simple browser-based slot machine game built with vanilla HTML, CSS, and JavaScript. Place a bet, spin three reels, and try to match all three symbols to win!
